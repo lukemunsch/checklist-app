@@ -3,6 +3,7 @@
 
 body {
     background-color: rgb(40, 40, 40);
+    width: 100%;
 }
 
 /* text colors */
@@ -78,7 +79,7 @@ main {
     font-size: 20px;
     border: 1px solid black;
     background-color: rgb(120, 0, 0);
-    color: black;
+    color: white;
 }
 
 .btn-red:hover {
@@ -97,20 +98,9 @@ footer {
 
 /* back button */
 
-.btn-back {
-    padding: 5px;
-    border: 1px white solid;
-    background-color: rgb(120, 0, 0);
-    font-size: 20px;
-}
-
-.btn-back:hover {
-    background-color: red;
-}
-
 .btn-reset {
     padding: 5px;
-    border: 1px white solid;
+    border: 1px black solid;
     background-color: rgb(0, 70, 0);
     color: white;
     font-size: 20px;
