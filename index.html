@@ -36,9 +36,9 @@
 <body class="bg-darkgrey">
 
     <!-- header -->
-    <header class="bg-lightgrey">
+    <header class="mb-3">
         <div class="container-fluid text-center">
-            <div class="row text-green bg-lightgrey">
+            <div class="row text-green">
                 <div class="col-12">
                     <h1 class="my-3"><strong>Checklist App</strong></h1>
                 </div>
@@ -50,14 +50,14 @@
     <main>
         <div class="container">
             <div class="row my-5 text-center">
-                <div class="col-12 mt-5">
-                    <a href="#" class="btn btn-lg btn-green text-grey"> Begin new Checklist</a>
+                <div class="col-12">
+                    <a href="checklist.html" class="btn btn-lg btn-green text-grey"> Begin new Checklist</a>
                 </div>
             </div>
             <div class="row my-5 text-center">
                 <div class="col-2 offset-5 help-btn">
                     <button type="button" class="btn btn-lg" id="help" data-toggle="modal" data-target="#helpModal">
-                        <i class="fas fa-question"></i>
+                        <i class="fas fa-question" title="What is this?"></i>
                     </button>
                 </div>
             </div>
@@ -65,7 +65,9 @@
     </main>
 
     <!-- footer -->
-    <footer></footer>
+    <footer class="bg-green">
+
+    </footer>
 
     <!-- modal content -->
     <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel"

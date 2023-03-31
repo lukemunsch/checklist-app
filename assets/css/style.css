@@ -39,8 +39,10 @@ body {
 
 /* Set up font families for app */
 header {
+    background-color: rgb(190, 190, 190);
     height: 80px;
     font-family: Rowdies, Helvetica, sans-serif;
+    border-bottom: 3px solid white;
 }
 
 main {
@@ -81,4 +83,39 @@ main {
 
 .btn-red:hover {
     background-color: red;
+}
+
+/* footer */
+
+footer {
+    height: 20px;
+    position: fixed;
+    bottom: 0;
+}
+
+/* ---------- checklist page --- */
+
+/* back button */
+
+.btn-back {
+    padding: 5px;
+    border: 1px white solid;
+    background-color: rgb(120, 0, 0);
+    font-size: 20px;
+}
+
+.btn-back:hover {
+    background-color: red;
+}
+
+.btn-reset {
+    padding: 5px;
+    border: 1px white solid;
+    background-color: rgb(0, 70, 0);
+    color: white;
+    font-size: 20px;
+}
+
+.btn-reset:hover {
+    background-color: rgb(130, 250, 130);
 }
