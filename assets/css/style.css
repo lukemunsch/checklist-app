@@ -114,8 +114,19 @@ footer {
     background-color: rgb(130, 250, 130);
 }
 
+.task-header {
+    color: rgb(190, 190, 190);
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
 .task-container {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     color: rgb(190, 190, 190);
+}
+
+.taskText {
+    margin-left: 10px;
 }
