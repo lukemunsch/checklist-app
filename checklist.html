@@ -57,7 +57,7 @@
                 </div>
                 <!-- reset page button -->
                 <div class="col-6">
-                    <a class="btn btn-reset" href="#" id="restart" onclick="startTasks()">
+                    <a class="btn btn-reset" href="#" id="restart" onclick="reload()">
                         <i class="fas fa-power-off"></i> Restart
                     </a>
                 </div>
@@ -70,6 +70,51 @@
                 </div>
             </div>
             <div class="row" id="taskArea1">
+                <div class="col-12 col-md-6">
+                    <div class="task-container">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label id="set1Task1" class="form-check-label taskText" for="flexCheckDefault">
+                                Prepare 7 dwarven beds for incoming workaholics
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label id="set1Task2" class="form-check-label taskText" for="flexCheckDefault">
+                                There are 36 reasons why I dont wanna end up in the Ever After!
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="task-container">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label id="set1Task3" class="form-check-label taskText" for="flexCheckDefault">
+                                Make a big round table for the knights of Avalon to sit at
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label id="set1Task4" class="form-check-label taskText" for="flexCheckDefault">
+                                Search the skies for signs of Dragons to ride
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div id="countField1" class="col-12 text-center">
+
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <h3 class="task-header">Main Course</h3>
+                </div>
+            </div>
+            <div class="row" id="taskArea2">
                 <div class="col-12 col-md-6">
                     <div class="task-container">
                         <div class="form-check mb-3">
@@ -102,12 +147,13 @@
                         </div>
                     </div>
                 </div>
-                <div id="countField" class="col-12 text-center">
+                <div id="countField2" class="col-12 text-center">
 
                 </div>
             </div>
             <hr>
         </div>
+        
     </main>
     <footer></footer>
 
