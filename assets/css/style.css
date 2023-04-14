@@ -141,6 +141,6 @@ footer {
 }
 
 #completeField {
-    height: 100px;
+    height: auto;
     background-color: rgb(71, 71, 71);
 }
