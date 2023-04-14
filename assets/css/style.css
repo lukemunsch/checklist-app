@@ -130,3 +130,17 @@ footer {
 .taskText {
     margin-left: 10px;
 }
+
+.count-field {
+    background-color: rgb(180, 0, 0);
+    height: 60px;
+}
+
+.complete-text {
+    font-size: 30px;
+}
+
+#completeField {
+    height: 100px;
+    background-color: rgb(71, 71, 71);
+}
