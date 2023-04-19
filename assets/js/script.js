@@ -4,16 +4,20 @@ function reload() {
 
 let checkbox1 = $("input[type=checkbox][name=set1]");
 let comp1 = [];
-var setRange1 = 4;
+
 let checkbox2 = $("input[type=checkbox][name=set2]");
 let comp2 = [];
-var setRange2 = 6;
+
 let checkbox3 = $("input[type=checkbox][name=set3]");
 let comp3 = [];
-var setRange3 = 6;
+
 let checkboxes = $("input[type=checkbox]");
 let enablePrint = [];
 
+
+const setRange1 = 4;
+const setRange2 = 6;
+const setRange3 = 6;
 
 var totalCheckboxes = setRange1 + setRange2 + setRange3;
 
