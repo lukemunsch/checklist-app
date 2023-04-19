@@ -160,3 +160,7 @@ footer {
 #completeField {
     height: auto;
 }
+
+.small-push {
+    height: 40px;
+}
