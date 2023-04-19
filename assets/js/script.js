@@ -24,8 +24,8 @@ let set2Msg = document.getElementById('countField2');
 let set2Container = document.getElementById('complete2');
 let set3Msg = document.getElementById('countField3');
 let set3Container = document.getElementById('complete3');
-let printButton = document.getElementById('completeField')
-let printText = document.getElementsByClassName('complete-text')
+let printButton = document.getElementById('completeField');
+let printText = document.getElementById('completeText')
 
 
 checkbox1.change(function() {
@@ -78,7 +78,7 @@ checkboxes.change(function() {
         .length;
 
     if(enablePrint !== totalCheckboxes){
-        printText.innerText = `You still have tasks to complete`;
+        printText.innerText = `You still have Tasks to complete before you can Print`;
         printButton.classList.remove("bg-complete");
         printButton.classList.add("bg-disabled");
         printButton.classList.add("disabled");
