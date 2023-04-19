@@ -17,6 +17,7 @@ checkbox1.change(function() {
         .length;
 
     $("")
+    console.log(comp1, "out of 4 Tasks Completed")
 })
 
 checkbox2.change(function() {
