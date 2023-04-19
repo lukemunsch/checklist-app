@@ -46,6 +46,14 @@ hr {
     background-color: rgb(30, 255, 0);
 }
 
+.bg-incomplete {
+    background-color: rgb(200, 0, 0);
+}
+
+.bg-disabled {
+    background-color: rgb(71, 71, 71);
+}
+
 /* Set up font families for app */
 header {
     background-color: rgb(190, 190, 190);
@@ -136,8 +144,9 @@ footer {
 }
 
 .count-field {
-    background-color: rgb(180, 0, 0);
     height: 60px;
+    border-radius: 10px;
+    border: 1px solid white;
 }
 
 .complete-text {
@@ -146,5 +155,4 @@ footer {
 
 #completeField {
     height: auto;
-    background-color: rgb(71, 71, 71);
 }
