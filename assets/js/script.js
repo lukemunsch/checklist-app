@@ -24,6 +24,8 @@ let set2Msg = document.getElementById('countField2');
 let set2Container = document.getElementById('complete2');
 let set3Msg = document.getElementById('countField3');
 let set3Container = document.getElementById('complete3');
+let printButton = document.getElementById('completeField')
+let printText = document.getElementsByClassName('complete-text')
 
 
 checkbox1.change(function() {
@@ -64,8 +66,7 @@ checkbox3.change(function() {
     if(comp3 !== setRange3){;
         set3Container.classList.add("bg-incomplete");
         set3Container.classList.remove("bg-complete");
-    };
-    if(comp3 === setRange3){
+    } else {
         set3Container.classList.remove("bg-incomplete");
         set3Container.classList.add("bg-complete");
     };
@@ -76,12 +77,15 @@ checkboxes.change(function() {
         .filter(":checked")
         .length;
 
-    if(enablePrint === totalCheckboxes){
-        set3Msg.innerText = `All Tasks have been Completed`;
-        $("#completeField").classList.remove("bg-disabled");
-        $("#completeField").classList.add("bg-complete");
+    if(enablePrint !== totalCheckboxes){
+        printText.innerText = `You still have tasks to complete`;
+        printButton.classList.remove("bg-complete");
+        printButton.classList.add("bg-disabled");
+        printButton.classList.add("disabled");
     } else {
-        $("#completeField").classList.add("bg-disabled");
-        $("#completeField").classList.remove("bg-complete");
+        printText.innerText = `All Tasks Complete - Print Report!`
+        printButton.classList.remove("bg-disabled");
+        printButton.classList.remove("disabled");
+        printButton.classList.add("bg-complete");
     }
 })

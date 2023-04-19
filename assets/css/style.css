@@ -54,6 +54,10 @@ hr {
     background-color: rgb(71, 71, 71);
 }
 
+.disabled {
+    background: rgba(0, 0, 0, 1);
+}
+
 /* Set up font families for app */
 header {
     background-color: rgb(190, 190, 190);
