@@ -171,7 +171,7 @@
     </div>
 
     <!-- Task set 3 -->
-    <div class="container mb-5">
+    <div class="container mb-3">
       <div class="row">
         <div class="col-12 mb-3">
           <h3 class="task-header">Finalise Section:</h3>
@@ -227,12 +227,27 @@
         </div>
       </div>
     </div>
-    <div class="d-md-none small-push"></div>
+    <div class="container">
+      <div class="row text-center">
+        <!-- back to top button -->
+        <div class="col-6">
+          <a class="btn btn-red btt-link" href="#">
+            <i class="fas fa-caret-up"></i> Top of List
+          </a>
+        </div>
+        <!-- reset page button -->
+        <div class="col-6">
+          <a class="btn btn-reset" href="#" id="restart" onclick="reload()">
+            <i class="fas fa-power-off"></i> Restart
+          </a>
+        </div>
+      </div>
+    </div>
   </main>
   <br>
 
-  <!-- set up fixed footer -->
-  <footer class="btn btn-lg fixed-bottom border bg-disabled disabled" id="completeField">
+  <!-- set up footer -->
+  <footer class="btn btn-lg border w-100 bg-disabled disabled" id="completeField">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 text-center">

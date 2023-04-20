@@ -2,6 +2,10 @@ function reload() {
     location.reload();
 }
 
+$('.btt-link').click(function () {
+    window.scrollTo(0, 0)
+})
+
 let checkbox1 = $("input[type=checkbox][name=set1]");
 let comp1 = [];
 
