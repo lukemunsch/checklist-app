@@ -8,8 +8,8 @@ $('.btt-link').click(function () {
     window.scrollTo(0, 0)
 })
 
-// MAIN CHECKBOX SCRIPT
 
+// MAIN CHECKBOX SCRIPT
 // ----- setting up the custom variables ---
 
 let checkbox1 = $("input[type=checkbox][name=set1]");
@@ -24,15 +24,15 @@ let comp3 = [];
 let checkboxes = $("input[type=checkbox]");
 let enablePrint = [];
 
-// Needs to match the number of tasks on main page
+// ----- Needs to match the number of tasks on main page -----
 const setRange1 = 4;
 const setRange2 = 6;
 const setRange3 = 6;
 
-// sets total number of tasks for print to enable
+// ----- sets total number of tasks for print to enable -----
 var totalCheckboxes = setRange1 + setRange2 + setRange3;
 
-// Identifies fields that need to be updated but our functions
+// ----- Identifies fields that need to be updated but our functions -----
 let set1Msg = document.getElementById('countField1');
 let set1Container = document.getElementById('complete1');
 let set2Msg = document.getElementById('countField2');
@@ -43,7 +43,7 @@ let printButton = document.getElementById('completeField');
 let printText = document.getElementById('completeText')
 
 
-// ----- setting up the functions for first set of tasks
+// ----- setting up the functions for first set of tasks -----
 checkbox1.change(function() {
     comp1 = checkbox1
         .filter(":checked")
@@ -60,7 +60,7 @@ checkbox1.change(function() {
 })
 
 
-// ----- setting up the functions for second set of tasks
+// ----- setting up the functions for second set of tasks -----
 checkbox2.change(function() {
     comp2 = checkbox2
         .filter(":checked")
@@ -76,7 +76,7 @@ checkbox2.change(function() {
     };
 })
 
-// ----- setting up the functions for third set of tasks
+// ----- setting up the functions for third set of tasks -----
 checkbox3.change(function() {
     comp3 = checkbox3
         .filter(":checked")
@@ -92,7 +92,7 @@ checkbox3.change(function() {
 })
 
 
-// Function for final footer print button
+// ----- Function for final footer print button -----
 checkboxes.change(function() {
     enablePrint = checkboxes
         .filter(":checked")
