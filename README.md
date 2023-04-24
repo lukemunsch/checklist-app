@@ -44,18 +44,19 @@ This is built using very simple styles and html - The main aspect of this was to
 
 ## **User Stories**
 
+The purpose of this app is to allow people to create a list of tasks that they need to complete in a few sections.
 
-
+The list of tasks and title can be customised to your own needs as well as adding new tasks i you need to by copying and pasting them into the correct sections. The task's sections will update and change the count field when you complete tasks and when all the teasks have been completed, the print button is enabled at the bottom to print a report.
 
 ## **Features**
 
 ### Style Choices
 
-
+There is not a lot of style placed on this as the main focus is to show examples of the javascript, but this is still suitable for use on multiple screens, clearly showing changes in design styles as well as text to update when changes are completed. Anything positive is changes to green and anything negative is red. There are also a few buttons that are all basic and have hover effects to brighten the colors.
 
 ### Favicon
 
-
+As a checklist app, I have chosen a check in a box in a positive green color. The background color is the same as the main page color. It fits the style and prupose of the app.
 
 ### Index Page
 
@@ -69,46 +70,58 @@ This is built using very simple styles and html - The main aspect of this was to
 
 
 
-## Implementation
+## **Implementation**
 
 
 
-## Features to Implement
+## **Features to Implement**
 
+It may be good to have the ability to edit the tasks or add tasks to the list, but currently the list is fixed, but manually adding more code through a workspace environment will still allow the checklist app to be updated.
 
+## **Testing**
 
-## Testing
-
-
+I have put the checklist app through different validators in order to make sure I am compliant with my code.
 
 ### HTML
 
-
+[Index Page]()
+[Checklist Page]()
 
 ### CSS
 
-
+[CSS file]()
 
 ### JavaScript
 
+[Script File]()
 
+## **Unfixed Bugs**
 
-## Unfixed Bugs
+Currently there are no unfixed bugs in this app - It is all working smoothly
 
-
-
-## Deployment
-
-
-
+## **Deployment**
 ### Local Deployment
+#### *Forking Repo*
 
+To propose fixing changes to some code, or to use the code as a starting point for your own project, you can fork the repository by clicking the 'Fork' button in the top right hand corner of the Github repository page.
 
+#### *Cloning Repo*
+
+To clone a repository to use in your own project you can:
+- Click on the 'Code' button next to the gitpod link which will bring down a dropdown menu, from there either:
+    - Clone the repository by copying the link for the repo and using it for your own project,
+    - Downloading the zip of the file to use for your own project.
 
 ### Remote Deployment
 
+Whether you have cloned, forked, downloaded an existing repository or created your own repository, you can deploy your code to the web from your repository page. To complete this, you can:
+1. Navigate to settings (upper right of the page).
+2. On the left, navigate downwards to the Pages section.
+3. When the page loads there would be a dropdown in main section of page, choose main/master.
+4. Hit Save and wait for link to show as: "Your site is published at 
+https://<'your-github-repo'>.github.io/<'app-name'>/"
 
-
-## Credits
+## **Credits**
 
 https://www.iconsdb.com/guacamole-green-icons/check-mark-2-icon.html - page for the favicon
+Stack Overflow and all its users for demonstrating fixes to issues I was having with checkbox changing.
