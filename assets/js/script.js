@@ -1,6 +1,8 @@
 // Set up reload of page to remove all checks
 function reload() {
     location.reload();
+    console.log("Clearing all completed tasks...")
+    console.log("Tasks cleared!")
 }
 
 // Back to top button function
@@ -116,8 +118,11 @@ checkboxes.change(function() {
 })
 
 function setText() {
-    set1Msg.innerText = `${comp1} out of ${setRange1} Tasks Completed`;
-    set2Msg.innerText = `${comp2} out of ${setRange2} Tasks Completed`;
-    set3Msg.innerText = `${comp3} out of ${setRange3} Tasks Completed`;
+    set1Msg.innerText = `0 out of ${setRange1} Tasks Completed`;
+    set2Msg.innerText = `0 out of ${setRange2} Tasks Completed`;
+    set3Msg.innerText = `0 out of ${setRange3} Tasks Completed`;
     printText.innerText = `Print disabled - Complete all tasks first`;
-}
+    console.log("Tasks have been reset - Begin tasks...");
+  }
+
+  window.onload = setText();
