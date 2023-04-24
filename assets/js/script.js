@@ -1,13 +1,12 @@
 // Set up reload of page to remove all checks
 function reload() {
     location.reload();
-    console.log("Clearing all completed tasks...")
-    console.log("Tasks cleared!")
 }
 
 // Back to top button function
 $('.btt-link').click(function () {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
+    console.log("Scrolling to top of page...")
 })
 
 
@@ -114,15 +113,20 @@ checkboxes.change(function() {
         printButton.classList.remove("disabled");
         printButton.classList.add("bg-complete");
         console.log("You have completed all tasks");
+        console.log("Print has been enabled!")
     }
 })
 
+
+// Function to set the text when page is loaded
 function setText() {
     set1Msg.innerText = `0 out of ${setRange1} Tasks Completed`;
     set2Msg.innerText = `0 out of ${setRange2} Tasks Completed`;
     set3Msg.innerText = `0 out of ${setRange3} Tasks Completed`;
     printText.innerText = `Print disabled - Complete all tasks first`;
+    console.log("Clearing all completed tasks...")
+    console.log("Tasks cleared!")
     console.log("Tasks have been reset - Begin tasks...");
-  }
+}
 
-  window.onload = setText();
+window.onload = setText();
