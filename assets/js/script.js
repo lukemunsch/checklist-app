@@ -25,9 +25,9 @@ let checkboxes = $("input[type=checkbox]");
 let enablePrint = [];
 
 // ----- Needs to match the number of tasks on main page -----
-const setRange1 = 4;
-const setRange2 = 6;
-const setRange3 = 6;
+const setRange1 = $("input[type=checkbox][name=set1").length;
+const setRange2 = $("input[type=checkbox][name=set2").length;
+const setRange3 = $("input[type=checkbox][name=set3").length;
 
 // ----- sets total number of tasks for print to enable -----
 var totalCheckboxes = setRange1 + setRange2 + setRange3;
@@ -56,6 +56,7 @@ checkbox1.change(function() {
     if(comp1 === setRange1){
         set1Container.classList.remove("bg-incomplete");
         set1Container.classList.add("bg-complete");
+        console.log("Completed tasks in Set 1");
     };
 })
 
@@ -73,6 +74,7 @@ checkbox2.change(function() {
     if(comp2 === setRange2){
         set2Container.classList.remove("bg-incomplete");
         set2Container.classList.add("bg-complete");
+        console.log("Completed tasks in Set 2");
     };
 })
 
@@ -88,6 +90,7 @@ checkbox3.change(function() {
     } else {
         set3Container.classList.remove("bg-incomplete");
         set3Container.classList.add("bg-complete");
+        console.log("Completed tasks in Set 3");
     };
 })
 
@@ -99,7 +102,7 @@ checkboxes.change(function() {
         .length;
 
     if(enablePrint !== totalCheckboxes){
-        printText.innerText = `You still have Tasks to complete before you can Print`;
+        printText.innerText = `Print disabled - Complete all tasks first`;
         printButton.classList.remove("bg-complete");
         printButton.classList.add("bg-disabled");
         printButton.classList.add("disabled");
@@ -108,5 +111,13 @@ checkboxes.change(function() {
         printButton.classList.remove("bg-disabled");
         printButton.classList.remove("disabled");
         printButton.classList.add("bg-complete");
+        console.log("You have completed all tasks");
     }
 })
+
+function setText() {
+    set1Msg.innerText = `${comp1} out of ${setRange1} Tasks Completed`;
+    set2Msg.innerText = `${comp2} out of ${setRange2} Tasks Completed`;
+    set3Msg.innerText = `${comp3} out of ${setRange3} Tasks Completed`;
+    printText.innerText = `Print disabled - Complete all tasks first`;
+}
