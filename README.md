@@ -84,16 +84,16 @@ I have put the checklist app through different validators in order to make sure 
 
 ### HTML
 
-[Index Page]()
-[Checklist Page]()
+[Index Page](assets/img/readme-img/cl-index-html.png)
+[Checklist Page](assets/img/readme-img/cl-checklist-html.png)
 
 ### CSS
 
-[CSS file]()
+[CSS file](assets/img/readme-img/cl-validator-css.png)
 
 ### JavaScript
 
-[Script File]()
+[Script File](assets/img/readme-img/cl-validator-js.png)
 
 ## **Unfixed Bugs**
 
