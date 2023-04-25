@@ -76,7 +76,11 @@ At the bottom of the page there is also the footer which states if there are tas
 
 The modal is a plain white box with text and a button to close; as with modals if you click off the modal anywhere it will minimise the modal.
 
-## **Implementation**
+## **Lighthouse**
+
+[Index Page](assets/img/readme-img/cl-index-lh.png)
+
+[Checklist Page](assets/img/readme-img/cl-checklist-lh.png)
 
 ## **Features to Implement**
 
