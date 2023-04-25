@@ -49,11 +49,12 @@ checkbox1.change(function() {
     comp1 = checkbox1
         .filter(":checked")
         .length;
-    set1Msg.innerText = `${comp1} out of ${setRange1} Tasks Completed`;
     if(comp1 !== setRange1){
+        set1Msg.innerText = `${comp1} out of ${setRange1} Tasks Completed`;
         set1Container.classList.add("bg-incomplete");
         set1Container.classList.remove("bg-complete");
     } else {
+        set1Msg.innerText = `This set of Tasks is Complete`;
         set1Container.classList.remove("bg-incomplete");
         set1Container.classList.add("bg-complete");
         console.log("Completed tasks in Set 1");
@@ -66,11 +67,12 @@ checkbox2.change(function() {
     comp2 = checkbox2
         .filter(":checked")
         .length;
-    set2Msg.innerText = `${comp2} out of ${setRange2} Tasks Completed`;
     if(comp2 !== setRange2){
+        set2Msg.innerText = `${comp2} out of ${setRange2} Tasks Completed`;
         set2Container.classList.add("bg-incomplete");
         set2Container.classList.remove("bg-complete");
     } else {
+        set2Msg.innerText = `This set of Tasks is Complete`;
         set2Container.classList.remove("bg-incomplete");
         set2Container.classList.add("bg-complete");
         console.log("Completed tasks in Set 2");
@@ -82,11 +84,12 @@ checkbox3.change(function() {
     comp3 = checkbox3
         .filter(":checked")
         .length;
-    set3Msg.innerText = `${comp3} out of ${setRange3} Tasks Completed`;
     if(comp3 !== setRange3){
+        set3Msg.innerText = `${comp3} out of ${setRange3} Tasks Completed`;
         set3Container.classList.add("bg-incomplete");
         set3Container.classList.remove("bg-complete");
     } else {
+        set3Msg.innerText = `This set of Tasks is Complete`;
         set3Container.classList.remove("bg-incomplete");
         set3Container.classList.add("bg-complete");
         console.log("Completed tasks in Set 3");
