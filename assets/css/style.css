@@ -9,11 +9,11 @@ body {
 /* text colors */
 
 .text-grey {
-    color: rgb(190, 190, 190);
+    color: rgb(235, 235, 235);
 }
 
 .text-green {
-    color: rgb(0, 180, 0);
+    color: rgb(0, 70, 0);
 }
 
 .text-blue {
@@ -31,7 +31,7 @@ hr {
 /* background colours */
 
 .bg-lightgrey {
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(235, 235, 235);
 }
 
 .bg-red {
@@ -47,7 +47,7 @@ hr {
 }
 
 .bg-incomplete {
-    background-color: rgb(200, 0, 0);
+    background-color: rgb(215, 90, 90);
 }
 
 .bg-disabled {
@@ -61,7 +61,7 @@ hr {
 
 /* Set up font families for app */
 header {
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(235, 235, 235);
     height: 80px;
     font-family: Rowdies, Helvetica, sans-serif;
     border-bottom: 3px solid white;
