@@ -6,8 +6,8 @@ function reload() {
 // Back to top button function
 $('.btt-link').click(function () {
     window.scrollTo(0, 0);
-    console.log("Scrolling to top of page...")
-})
+    console.log("Scrolling to top of page...");
+});
 
 
 // MAIN CHECKBOX SCRIPT
@@ -41,7 +41,7 @@ let set2Container = document.getElementById('complete2');
 let set3Msg = document.getElementById('countField3');
 let set3Container = document.getElementById('complete3');
 let printButton = document.getElementById('completeField');
-let printText = document.getElementById('completeText')
+let printText = document.getElementById('completeText');
 
 
 // ----- setting up the functions for first set of tasks -----
@@ -50,16 +50,15 @@ checkbox1.change(function() {
         .filter(":checked")
         .length;
     set1Msg.innerText = `${comp1} out of ${setRange1} Tasks Completed`;
-    if(comp1 !== setRange1){;
+    if(comp1 !== setRange1){
         set1Container.classList.add("bg-incomplete");
         set1Container.classList.remove("bg-complete");
-    };
-    if(comp1 === setRange1){
+    } else {
         set1Container.classList.remove("bg-incomplete");
         set1Container.classList.add("bg-complete");
         console.log("Completed tasks in Set 1");
-    };
-})
+    }
+});
 
 
 // ----- setting up the functions for second set of tasks -----
@@ -68,16 +67,15 @@ checkbox2.change(function() {
         .filter(":checked")
         .length;
     set2Msg.innerText = `${comp2} out of ${setRange2} Tasks Completed`;
-    if(comp2 !== setRange2){;
+    if(comp2 !== setRange2){
         set2Container.classList.add("bg-incomplete");
         set2Container.classList.remove("bg-complete");
-    };
-    if(comp2 === setRange2){
+    } else {
         set2Container.classList.remove("bg-incomplete");
         set2Container.classList.add("bg-complete");
         console.log("Completed tasks in Set 2");
-    };
-})
+    }
+});
 
 // ----- setting up the functions for third set of tasks -----
 checkbox3.change(function() {
@@ -85,15 +83,15 @@ checkbox3.change(function() {
         .filter(":checked")
         .length;
     set3Msg.innerText = `${comp3} out of ${setRange3} Tasks Completed`;
-    if(comp3 !== setRange3){;
+    if(comp3 !== setRange3){
         set3Container.classList.add("bg-incomplete");
         set3Container.classList.remove("bg-complete");
     } else {
         set3Container.classList.remove("bg-incomplete");
         set3Container.classList.add("bg-complete");
         console.log("Completed tasks in Set 3");
-    };
-})
+    }
+});
 
 
 // ----- Function for final footer print button -----
@@ -108,14 +106,14 @@ checkboxes.change(function() {
         printButton.classList.add("bg-disabled");
         printButton.classList.add("disabled");
     } else {
-        printText.innerText = `All Tasks Complete - Print Report!`
+        printText.innerText = `All Tasks Complete - Print Report!`;
         printButton.classList.remove("bg-disabled");
         printButton.classList.remove("disabled");
         printButton.classList.add("bg-complete");
         console.log("You have completed all tasks");
-        console.log("Print has been enabled!")
+        console.log("Print has been enabled!");
     }
-})
+});
 
 
 // Function to set the text when page is loaded
@@ -124,8 +122,8 @@ function setText() {
     set2Msg.innerText = `0 out of ${setRange2} Tasks Completed`;
     set3Msg.innerText = `0 out of ${setRange3} Tasks Completed`;
     printText.innerText = `Print disabled - Complete all tasks first`;
-    console.log("Clearing all completed tasks...")
-    console.log("Tasks cleared!")
+    console.log("Clearing all completed tasks...");
+    console.log("Tasks cleared!");
     console.log("Tasks have been reset - Begin tasks...");
 }
 
